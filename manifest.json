@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dock-x",
+  "description": "Helps you keep up with nairalanders",
+  "version": "1.0",
+
+  "background": {
+    "scripts": ["js/vendor/require.js", "js/bg.js"],
+        "persistent": true
+  },
+
+  "content_scripts": [
+    {
+        "matches": ["http://*/*"],
+            "css": ["css/view.css"],
+            "js": ["js/vendor/jquery-1.9.0.min.js", "js/vendor/underscore-min.js", "js/cs.js"]
+        }
+    ],
+
+  "web_accessible_resources": ["templates/ticker-template.html"],
+
+  "permissions": [
+      "tabs",
+      "cookies",
+      "webRequest",
+      "webRequestBlocking",
+      "*://*/*"
+  ]
+}

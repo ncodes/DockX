@@ -1,0 +1,13 @@
+#ticker-container {
+
+    width: 205px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    display: none;
+    -webkit-background-clip: padding-box;
+    background-color: #F2F4F8;
+    border-left: 1px solid rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 2px 0 2px -2px #B2B9C9;
+    z-index: 300;
+}
